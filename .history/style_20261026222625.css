@@ -1,0 +1,133 @@
+:root {
+  --yellow: #FDC913;
+  --gray-light: #5F5F5F;
+  --gray-dark: #292929;
+  --red: #CE2829;
+  --beige: #FAF7F2;
+
+  --font-heading: "Roboto Condensed", sans-serif;
+  --font-body: "Barlow", sans-serif;
+  --font-serif: "Quattrocento", serif;
+  --font-accent: "Satisfy", cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--gray-dark);
+  background-color: #fff;
+  line-height: 1.5;
+}
+/* ---------- Ortak buton ---------- */
+.buton {
+  display: inline-block;
+  padding: 12px 36px;
+  border-radius: 50px;
+  background-color: var(--yellow);
+  color: var(--gray-dark);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* ---------- Kapak (hero) ---------- */
+.kapak {
+  min-height: 100vh;
+  padding: 50px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: var(--red);
+  background-image: url("/assets/iteration-1/home-banner.png");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.kapak img {
+  width: 250px;
+}
+
+.kapak p {
+  display: none;
+  font-family: var(--font-accent);
+  font-size: 24px;
+  color: var(--yellow);
+}
+
+.kapak h1 {
+  max-width: 280px;
+  margin-top: 60px;
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 1.15;
+}
+
+.kapak .buton {
+  margin-top: 40px;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* ---------- Kategori şeridi ---------- */
+.kategoriler {
+  padding: 28px 20px;
+  background-color: #fff;
+}
+
+
+.kategoriler a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.kategoriler img {
+  width: 32px;
+}
+
+/* ---------- Geniş ekran ---------- */
+@media (min-width: 768px) {
+  .kapak {
+    min-height: 56vw;
+    padding-top: 40px;
+  }
+
+  .kapak p {
+    display: block;
+    margin-top: 24px;
+  }
+
+  .kapak h1 {
+    max-width: 520px;
+    margin-top: 4px;
+    font-size: 64px;
+  }
+  .kategoriler ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: none;
+  }
+}
