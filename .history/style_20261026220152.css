@@ -1,0 +1,32 @@
+:root {
+  --yellow: #FDC913;
+  --gray-light: #5F5F5F;
+  --gray-dark: #292929;
+  --red: #CE2829;
+  --beige: #FAF7F2;
+
+  --font-heading: "Roboto Condensed", sans-serif;
+  --font-body: "Barlow", sans-serif;
+  --font-serif: "Quattrocento", serif;
+  --font-accent: "Satisfy", cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--gray-dark);
+  background-color: #fff;
+  line-height: 1.5;
+}
