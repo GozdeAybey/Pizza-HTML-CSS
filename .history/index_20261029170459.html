@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./workintech.svg" />
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Quattrocento:wght@400;700&family=Roboto+Condensed:wght@300;400;700&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Teknolojik Yemekler</title>
+  </head>
+
+  <body>
+    <header class="kapak">
+      <img src="/assets/iteration-1/logo.svg" alt="Teknolojik Yemekler">
+      <p>fırsatı kaçırma</p>
+      <h1>KOD ACIKTIRIR PİZZA, DOYURUR</h1>
+      <a class="buton" href="#menu">ACIKTIM</a>
+    </header>
+
+    <nav class="kategoriler" aria-label="Kategoriler">
+      <ul>
+        <li><a href="#"><img src="/assets/iteration-2/icons/1.svg" alt="">YENİ! Kore</a></li>
+        <li><a href="#"><img src="/assets/iteration-2/icons/2.svg" alt="">Pizza</a></li>
+        <li><a href="#"><img src="/assets/iteration-2/icons/3.svg" alt="">Burger</a></li>
+        <li><a href="#"><img src="/assets/iteration-2/icons/4.svg" alt="">Kızartmalar</a></li>
+        <li><a href="#"><img src="/assets/iteration-2/icons/5.svg" alt="">Fast food</a></li>
+        <li><a href="#"><img src="/assets/iteration-2/icons/6.svg" alt="">Gazlı İçecek</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="kampanyalar">
+        <article class="kampanya pizza">
+          <h2>Özel Lezzetus</h2>
+          <p>Position:Absolute Acı Burger</p>
+          <a class="buton" href="#menu">SİPARİŞ VER</a>
+        </article>
+
+        <article class="kampanya burger">
+          <h2>Hackathlon Burger Menü</h2>
+          <a class="buton" href="#menu">SİPARİŞ VER</a>
+        </article>
+
+        <article class="kampanya kurye">
+          <h2><span>Çoooook</span> hızlı npm gibi kurye</h2>
+          <a class="buton" href="#menu">SİPARİŞ VER</a>
+        </article>
+      </section>
+
+      <section class="menu" id="menu">
+        <p>en çok paketlenen menüler</p>
+        <h2>Acıktıran Kodlara Doyuran Lezzetler</h2>
+
+        <ul class="filtreler">
+          <li><button type="button"><img src="/assets/iteration-2/icons/1.svg" alt="">Ramen</button></li>
+          <li><button type="button" class="secili"><img src="/assets/iteration-2/icons/2.svg" alt="">Pizza</button></li>
+          <li><button type="button"><img src="/assets/iteration-2/icons/3.svg" alt="">Burger</button></li>
+          <li><button type="button"><img src="/assets/iteration-2/icons/4.svg" alt="">French fries</button></li>
+          <li><button type="button"><img src="/assets/iteration-2/icons/5.svg" alt="">Fast food</button></li>
+          <li><button type="button"><img src="/assets/iteration-2/icons/6.svg" alt="">Soft drinks</button></li>
+        </ul>
+
+        <ul class="urunler">
+          <li class="urun">
+            <img src="/assets/iteration-2/pictures/food-1.png" alt="Terminal Pizza">
+            <h3>Terminal Pizza</h3>
+            <div class="bilgi">
+              <span>4.9</span>
+              <span>(200)</span>
+              <span class="fiyat">60₺</span>
+            </div>
+          </li>
+          <li class="urun">
+            <img src="/assets/iteration-2/pictures/food-2.png" alt="Position Absolute Acı Pizza">
+            <h3>Position Absolute Acı Pizza</h3>
+            <div class="bilgi">
+              <span>4.9</span>
+              <span>(200)</span>
+              <span class="fiyat">60₺</span>
+            </div>
+          </li>
+          <li class="urun">
+            <img src="/assets/iteration-2/pictures/food-3.png" alt="useEffect Tavuklu Burger">
+            <h3>useEffect Tavuklu Burger</h3>
+            <div class="bilgi">
+              <span>4.9</span>
+              <span>(200)</span>
+              <span class="fiyat">60₺</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="altbilgi">
+      <div class="altbilgi-ust">
+        <section class="iletisim">
+          <img src="/assets/iteration-2/footer/logo-footer.svg" alt="Teknolojik Yemekler">
+          <address>
+            <p><img src="/assets/iteration-2/footer/icons/icon-1.png" alt="">341 Londonderry Road, İstanbul Türkiye</p>
+            <p><img src="/assets/iteration-2/footer/icons/icon-2.png" alt="">aciktim@teknolojikyemekler.com</p>
+            <p><img src="/assets/iteration-2/footer/icons/icon-3.png" alt="">+90 216 123 45 67</p>
+          </address>
+        </section>
+
+        <nav class="sicak-menu" aria-label="Hot Menu">
+          <h3>Hot Menu</h3>
+          <ul>
+            <li><a href="#">Terminal Pizza</a></li>
+            <li><a href="#">5 Kişilik Hackathlon Pizza</a></li>
+            <li><a href="#">useEffect Tavuklu Pizza</a></li>
+            <li><a href="#">Beyaz Console Frosty</a></li>
+            <li><a href="#">Testler Geçti Mutlu Burger</a></li>
+            <li><a href="#">Position Absolute Acı Burger</a></li>
+          </ul>
+        </nav>
+
+        <section class="instagram">
+          <h3>Instagram</h3>
+          <ul>
+            <li><img src="/assets/iteration-2/footer/insta/li-0.png" alt="Instagram gönderisi 1"></li>
+            <li><img src="/assets/iteration-2/footer/insta/li-1.png" alt="Instagram gönderisi 2"></li>
+            <li><img src="/assets/iteration-2/footer/insta/li-2.png" alt="Instagram gönderisi 3"></li>
+            <li><img src="/assets/iteration-2/footer/insta/li-3.png" alt="Instagram gönderisi 4"></li>
+            <li><img src="/assets/iteration-2/footer/insta/li-4.png" alt="Instagram gönderisi 5"></li>
+            <li><img src="/assets/iteration-2/footer/insta/li-5.png" alt="Instagram gönderisi 6"></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="altbilgi-alt">
+        <p>© 2023 Teknolojik Yemekler.</p>
+        <a href="#" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+
+</html>
